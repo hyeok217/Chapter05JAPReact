@@ -74,7 +74,7 @@ const UpdateForm = () => {
         axios.get(`/user/getUser?id=${userId}`)
              .then(res => setUserDTO(res.data))
              .catch(error => console.log(error))
-    }, [reset])
+    }, [reset, userId])
 
     return (
         <div>
